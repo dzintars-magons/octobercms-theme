@@ -1,0 +1,21 @@
+.navigation {
+    @include container-fluid;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__items {
+            display: flex;
+            flex-direction: row;
+            @include no-bullets;
+            .nav-item {
+                @include tablet-down {
+                    font-size: rem(16px);
+                }
+            }
+        }
+        .nav-logo {
+            font-size: rem(16px);
+        }
+    }
+}

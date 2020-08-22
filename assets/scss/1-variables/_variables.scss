@@ -1,0 +1,81 @@
+/*
+    =========
+    Typography
+    =========
+*/
+
+$font-family: 'Roboto', sans-serif;
+//background colors
+$primary-bg: hotpink; 
+$secondary-bg: gold;
+//font colors
+$primary-font-color: #010100;
+$secondary-font-color: #fff;
+//headings in pixels, but will be converted to rems
+$h1: rem(36);
+$h2: rem(27);
+$h3: rem(20);
+$h4: rem(16);
+$h5: rem(16);
+$h6: rem(16);
+$p: rem(16);
+
+$primary-line-height: 1.5;
+
+//font weight variables
+$regular:   400;
+$medium:    500;
+$semi-bold: 600;
+$bold:      700;
+
+/*
+    =========
+    Responsive
+    =========
+*/
+
+//Bootstrap Breakpoints INFO
+
+$mobile-end: 575px; 
+//sm
+$phablet-start: 576px;
+$phablet-end: 767px;
+//md
+$tablet-start: 768px;
+$tablet-end: 991px;
+//lg
+$desktop-start: 992px;
+$desktop-end: 1199px;
+//xl
+$large-desktop-start: 1200px;
+
+
+/*
+    =========
+    Other
+    =========
+*/
+
+//Buttons
+
+$button-color: #FFF;
+$button-font-size: 1.6rem;
+$button-padding: 0.5em 1.5em;
+$button-margin: 0;
+
+//Spacing 
+
+$margin-bottom-primary: 1.6rem; //used in base as default for paragraphs and all headings
+$margin-bottom-secondary: 1.2rem;
+$margin-bottom-tertiary: 1rem;
+
+$padding-top-primary: $margin-bottom-primary;
+$padding-top-secondary: $margin-bottom-secondary;
+$padding-top-tertiary: $margin-bottom-tertiary;
+
+//Extra
+$popup-box-shadow: 2px 0px 25px rgba(#9A9EA6, .6);
+$aspect-ratio-box-height: 315px;
+$aspect-ratio-box-width: 560px;
+$aspect-ratio-box-text: 5vw;
+

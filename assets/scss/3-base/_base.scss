@@ -1,0 +1,138 @@
+  html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    min-height: 100%;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  *{
+      margin: 0; 
+      padding: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: $primary-bg;
+    color: $primary-font-color;
+    font-family: $font-family;
+    font-weight: $regular;
+    line-height: $primary-line-height;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: $margin-bottom-primary;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  } 
+
+  p:first-child, h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+    padding-top: $padding-top-primary;
+  }
+  
+  p {
+    font-size: $p;
+    text-align: center;
+  }
+
+  button:not(:disabled),
+  [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+  button, [type="button"] {
+      display: inline-block;
+      color: inherit;
+      background-color: $button-color;
+      line-height: $primary-line-height;
+      font-size: $button-font-size;
+      padding: $button-padding;
+      margin: $button-margin;
+      text-decoration: none;
+      text-align: center;
+      border: 1px solid transparent;
+      border-radius: 0.5em;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+      }
+      &:hover {
+        color: white;
+        background: #000;
+      }
+      &:disabled {
+        opacity: 0.65;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        
+          transition: none;
+        
+      }
+  }
+
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    margin: 1.6rem 0;
+    border: 0;
+  }
+  
+
+  ol, ul {
+    padding-left: 3rem;
+    padding-bottom: 1.6rem;
+    padding-top: 1.6rem;
+  }
+
+  ol li, ul li {
+    font-size: 1.6rem;
+  }
+
+  ol li:not(:last-child),
+  ul li:not(:last-child) {
+    padding-right: 1rem;
+  }
+
+  a {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+
+  input, select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  @media print {
+    *,
+    *::before,
+    *::after {
+      text-shadow: none !important;
+      box-shadow: none !important;
+    }
+  }

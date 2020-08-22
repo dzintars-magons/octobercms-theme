@@ -1,0 +1,113 @@
+//DESKTOP FIRST MEDIA QUERIES
+
+//till 1199px
+@mixin desktop-down {
+    @media (max-width: #{$desktop-end}) {
+        @content; 
+   }
+}
+//till 991px
+@mixin tablet-down {
+    @media (max-width: #{$tablet-end}) {
+        @content; 
+   }
+}
+//till 767px
+@mixin phablet-down {
+    @media (max-width: #{$phablet-end}) {
+        @content; 
+   }
+}
+//till 575px
+@mixin mobile-down {
+    @media (max-width: #{$mobile-end}) {
+        @content; 
+   }
+}
+//till whatever you choose
+@mixin max-width ($size) {
+    @media (max-width: $size) {
+        @content; 
+    }
+}
+//maybe you need a media query for height of the viewport
+@mixin max-height ($size) {
+    @media (max-height: $size) {
+        @content; 
+    }
+}
+
+//MOBILE FIRST MEDIA QUERIES
+
+//phablet up 
+//576px and up 
+@mixin phablet-up {
+    @media (min-width: #{$phablet-start}) {
+        @content;
+    }
+}
+//tablet up
+//768px and up 
+@mixin tablet-up {
+    @media (min-width: #{$tablet-start}) {
+        @content;
+    }
+}
+
+//992px and up
+@mixin desktop-up {
+    @media (min-width: #{$desktop-start}) {
+        @content;
+    }
+}
+
+@mixin large-desktop-up {
+    @media (min-width: #{$large-desktop-start}) {
+        @content;
+    }
+}
+
+//from whatever size you choose
+
+@mixin min-width ($size) {
+    @media (min-width: $size) {
+        @content; 
+    }
+}
+
+//MEDIA QUERIES WITHIN A SPECIFIC RANGE like MOBILE or TABLET range only
+
+//mobile only
+//till 576px only
+@mixin mobile-only {
+    @media (max-width: #{$mobile-end}) {
+        @content;
+    }
+}
+//phablet-phones' size only
+//577px - 768px
+@mixin phablet-only {
+    @media (min-width: #{$phablet-start}) and (max-width: #{$phablet-end}) {
+        @content;
+    }
+}
+//only tablet
+//from 768px till 992px
+@mixin tablet-only {
+    @media (min-width: #{$tablet-start}) and (max-width: #{$tablet-end}) {
+        @content;
+    }
+}
+//only desktop
+//from 992px
+@mixin desktop-only {
+    @media (min-width: #{$desktop-start}) {
+        @content;
+    }
+}
+//only specific range of your choosing 
+@mixin range ($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content; 
+    }
+}

@@ -1,0 +1,45 @@
+//HOMEPAGE SCSS
+
+/*
+    =========
+    MAIN
+    =========
+*/
+
+/* 
+    =============
+    INTRODUCTION 
+    =============
+*/
+
+.landing-page {
+    .hero {
+        background-color: $secondary-bg;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        &-content {
+            @include container-fluid;
+            &__head, &__txt, .btn-group {
+                @include tablet-up {
+                    margin-left: 50px;
+                }
+            }
+            &__head, &__txt {
+                @include tablet-up {
+                    width: 50%;
+                    @include text-left;
+                }
+            }
+            .btn-group {
+                @include phablet-down {
+                    display: flex;
+                    justify-content: center;
+                }
+                
+            }
+        }
+    }
+}
+
+
